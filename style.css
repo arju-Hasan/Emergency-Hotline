@@ -1,3 +1,25 @@
-.button{
-    background-color: blue;
+.call-button{
+    background-color: #00A63E;
+    text-align: center;
+    border: 1px solid green;
+    margin: auto;
+    width: 100%;
+    border-radius: 8px;
+    color: white;
+}
+.call-button:hover{
+    background-color: green;
+    color: white;
+}
+.copy-button{
+    background-color: white;
+    text-align: center;
+    border: 1px solid gray;
+    margin: auto;
+    width: 100%;
+    border-radius: 8px;
+}
+.copy-button:hover{
+    background-color: gray;
+    color: white;
 }
