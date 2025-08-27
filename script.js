@@ -231,25 +231,28 @@ for (const btn of callButtons) {
     }
     const card = btn.closest(".card");
     const serviceName = card.querySelector(".service-name").innerText;
-    const serviceNumber = card.querySelector(".helpline-number").innerText;
+    const serviceNumber = card.querySelector(".service-number").innerText;
     const serviceTitle = card.querySelector(".service-title").innerText;
 
-    alert(`Calling ${serviceName} at ${serviceNumber}`);
+    alert(`📞 Calling ${serviceName} at ${serviceNumber}`);
 
     const historyItem = document.createElement("div");
-
+    //    shadow-sm shadow-[#CDCECA] 
     historyItem.innerHTML = `
     
-        <div class="flex justify-between items-center p-4 my-4 bg-[#FAFAFA] rounded-lg">
+        <div class="flex justify-between items-center bg-[#FFE3E2] shadow-lg shadow-[#CDCECA] p-3 rounded-lg pl-6 pr-6 my-4">
             <div>
                 <h3 class="font-[Inter] font-semibold text-[#111111]">${serviceTitle}</h3>
                 <p class="text-[#5C5C5C] text-[18px]">${serviceNumber}</p>
             </div>
             <p class="text-[18px] text-[#111111]">${new Date().toLocaleTimeString()}</p>
         </div>
-
     `;
-
     callHistoryContainer.appendChild(historyItem);
   });
 }
+// ================== clear call history==============
+const clearHistory = document.getElementById("clear-history-btn");
+clearHistory.addEventListener("click", function () {
+  callHistoryContainer.innerHTML = "";
+});
