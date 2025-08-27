@@ -15,7 +15,6 @@ for (const heart of hearts) {
       heart.classList.add("fa-regular");
       heartCount--;
     }
-
     heartCountElement.innerText = heartCount;
   });
 }

@@ -24,15 +24,19 @@
   </head>
   <body class="w-full">
     <!-- <nav class="flex items-center justify-between max-w-[1920px] mx-auto center"> -->
-    <nav class="flex flex-col sm:flex-row items-center justify-between max-w-[1920px] mx-auto">
-      <div class="flex items-center gap-2 ml-[60px] mt-[20px] mb-[20px]">
+    <nav
+      class="flex flex-col sm:flex-row items-center justify-between max-w-[1920px] mx-auto"
+     >
+      <div class="flex items-center gap-2 sm:ml-[60px] mt-[20px] mb-[20px]">
         <img src="assets/logo.png" alt="Logo" class="h-[50px]" />
-        <h1 class="ml-2 text-2xl font-bold text-[#006747]">
+        <h1 class="ml-2 text-xl font-bold text-[#006747]">
           Emergency <br />
           services
         </h1>
       </div>
-      <div class="flex items-center gap-4 text-lg font-semibold p-2 pr-4 mr-4">
+      <div
+        class="flex items-center gap-4 text-lg font-semibold p-2 pr-4 mr-4 pb-3 md:pb-0 lg:pb-0"
+      >
         <div
           class="bg-[#FFE3E2] rounded-lg p-2 pl-4 pr-4 flex items-center gap-2"
         >
@@ -54,7 +58,7 @@
     </nav>
     <header>
       <div
-        class="max-w-[1920px] mx-auto h-[250px] bg-gradient-to-r from-[#013223] via-[#068F65] to-[#013223] text-white flex flex-col items-center justify-center gap-2"
+        class="max-w-[1920px] mx-auto bg-gradient-to-r from-[#013223] via-[#068F65] to-[#013223] text-white flex flex-col items-center justify-center gap-1 p-6"
       >
         <img
           src="assets/logo.png"
@@ -73,7 +77,7 @@
       <div
         class="grid gap-4 m-4 grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4"
       >
-        <!-- </div> class="grid grid-cols-4 gap-4 m-4"> -->
+
         <!-- জাতীয় জরুরি সেবা -->
         <div class="card order-1 shadow-lg shadow-[#CDCECA] p-5 rounded-lg">
           <div class="flex items-center justify-between">
@@ -86,7 +90,7 @@
               <i class="fa-regular fa-heart heart-btn p-2"></i>
             </p>
           </div>
-          <h2 id="NationalName" class="text-2xl font-bold pt-2 service-title">
+          <h2 id="NationalName" class="text-xl font-bold pt-2 service-title">
             জাতীয় জরুরি সেবা
           </h2>
           <p class="font-semibold text-[#4A4A4A] pt-2 service-name">
@@ -94,11 +98,11 @@
           </p>
           <p
             id="NationalEmergency"
-            class="text-2xl font-bold pt-2 service-number"
+            class="text-xl font-bold pt-2 service-number"
           >
             999
           </p>
-          <p class="pt-2 bg-[#FFE3E2] p-2 rounded-xl inline-block">সার্বজনীন</p>
+          <span class="pt-2 bg-[#FFE3E2] p-2 rounded-[9999px] w-fit">সার্বজনীন</span>
           <div class="flex items-center gap-2 mt-2 text-lg">
             <button id="copy-button-national" class="copy-button">
               <i class="fa-regular fa-copy"></i> Copy
@@ -120,15 +124,12 @@
               <i class="fa-regular fa-heart heart-btn p-2"></i>
             </p>
           </div>
-          <h2 class="text-2xl font-bold pt-2 service-title">পুলিশ</h2>
+          <h2 class="text-xl font-bold pt-2 service-title">পুলিশ</h2>
           <p class="font-semibold text-[#4A4A4A] pt-2 service-name">Police</p>
-          <p
-            id="PoliceEmergency"
-            class="text-2xl font-bold pt-2 service-number"
-          >
+          <p id="PoliceEmergency" class="text-xl font-bold pt-2 service-number">
             999
           </p>
-          <p class="pt-2 bg-[#FFE3E2] p-2 rounded-xl inline-block">পুলিশ</p>
+          <p class="pt-2 bg-[#FFE3E2] p-2 rounded-2xl w-max">পুলিশ</p>
           <div class="flex items-center gap-2 mt-2 text-lg">
             <button id="copy-button-police" class="copy-button">
               <i class="fa-regular fa-copy"></i> Copy
@@ -150,15 +151,15 @@
               <i class="fa-regular fa-heart heart-btn p-2"></i>
             </p>
           </div>
-          <h2 class="text-2xl font-bold pt-2 service-title">ফায়ার সার্ভিস</h2>
+          <h2 class="text-xl font-bold pt-2 service-title">ফায়ার সার্ভিস</h2>
           <p class="font-semibold text-[#4A4A4A] pt-2 service-name">
             Fire Service
           </p>
-          <p id="FireEmergency" class="text-2xl font-bold pt-2 service-number">
+          <p id="FireEmergency" class="text-xl font-bold pt-2 service-number">
             999
           </p>
-          <p class="pt-2 bg-[#FFE3E2] p-2 rounded-xl inline-block">
-            ফায়ার সার্ভিস
+          <p class="pt-2 bg-[#FFE3E2] p-2 rounded-2xl w-fit">
+            ফায়ার
           </p>
           <div class="flex items-center gap-2 mt-2 text-lg">
             <button id="copy-button-fire" class="copy-button">
@@ -200,19 +201,17 @@
               <i class="fa-regular fa-heart heart-btn p-2"></i>
             </p>
           </div>
-          <h2 class="text-2xl font-bold pt-2 service-title">অ্যাম্বুলেন্স</h2>
+          <h2 class="text-xl font-bold pt-2 service-title">অ্যাম্বুলেন্স</h2>
           <p class="font-semibold text-[#4A4A4A] pt-2 service-name">
             Ambulance
           </p>
           <p
             id="AmbulanceEmergency"
-            class="text-2xl font-bold pt-2 service-number"
+            class="text-xl font-bold pt-2 service-number"
           >
             1994-999999
           </p>
-          <p class="pt-2 bg-[#FFE3E2] p-2 rounded-xl !inline-block">
-            স্বাস্থ্য
-          </p>
+          <p class="pt-2 bg-[#FFE3E2] p-2 rounded-2xl w-max">স্বাস্থ্য</p>
           <div class="flex items-center gap-2 mt-2 text-lg">
             <button id="copy-button-ambulance" class="copy-button">
               <i class="fa-regular fa-copy"></i> Copy
@@ -234,7 +233,7 @@
               <i class="fa-regular fa-heart heart-btn p-2"></i>
             </p>
           </div>
-          <h2 class="text-2xl font-bold pt-2 service-title">
+          <h2 class="text-xl font-bold pt-2 service-title">
             নারী ও শিশু সহায়তা
           </h2>
           <p class="font-semibold text-[#4A4A4A] pt-2 service-name">
@@ -242,11 +241,11 @@
           </p>
           <p
             id="WomenChildEmergency"
-            class="text-2xl font-bold pt-2 service-number"
+            class="text-xl font-bold pt-2 service-number"
           >
             109
           </p>
-          <p class="pt-2 bg-[#FFE3E2] p-2 rounded-xl inline-block">সহায়তা</p>
+          <p class="pt-2 bg-[#FFE3E2] p-2 rounded-xl w-fit">সহায়তা</p>
           <div class="flex items-center gap-2 mt-2 text-lg">
             <button id="copy-button-women-child" class="copy-button">
               <i class="fa-regular fa-copy"></i> Copy
@@ -268,17 +267,17 @@
               <i class="fa-regular fa-heart heart-btn p-2"></i>
             </p>
           </div>
-          <h2 class="text-2xl font-bold pt-2 service-title">দুদক</h2>
+          <h2 class="text-xl font-bold pt-2 service-title">দুদক</h2>
           <p class="font-semibold text-[#4A4A4A] pt-2 service-name">
             Anti-Corruption
           </p>
           <p
             id="AntiCorruptionEmergency"
-            class="text-2xl font-bold pt-2 service-number"
+            class="text-xl font-bold pt-2 service-number"
           >
             106
           </p>
-          <p class="pt-2 bg-[#FFE3E2] p-2 rounded-xl inline-block">সরকারি</p>
+          <p class="pt-2 bg-[#FFE3E2] p-2 rounded-xl w-fit">সরকারি</p>
           <div class="flex items-center gap-2 mt-2 text-lg">
             <button id="copy-button-anti-corruption" class="copy-button">
               <i class="fa-regular fa-copy"></i> Copy
@@ -300,17 +299,17 @@
               <i class="fa-regular fa-heart heart-btn p-2"></i>
             </p>
           </div>
-          <h2 class="text-2xl font-bold pt-2 service-title">বিদ্যুৎ বিভ্রাট</h2>
+          <h2 class="text-xl font-bold pt-2 service-title">বিদ্যুৎ বিভ্রাট</h2>
           <p class="font-semibold text-[#4A4A4A] pt-2 service-name">
             Electricity Outage
           </p>
           <p
             id="ElectricityEmergency"
-            class="text-2xl font-bold pt-2 service-number"
+            class="text-xl font-bold pt-2 service-number"
           >
             16216
           </p>
-          <p class="pt-2 bg-[#FFE3E2] p-2 rounded-xl inline-block">বিদ্যুৎ</p>
+          <p class="pt-2 bg-[#FFE3E2] p-2 rounded-xl w-fit">বিদ্যুৎ</p>
           <div class="flex items-center gap-2 mt-2 text-lg">
             <button id="copy-button-electricity" class="copy-button">
               <i class="fa-regular fa-copy"></i> Copy
@@ -332,12 +331,12 @@
               <i class="fa-regular fa-heart heart-btn p-2"></i>
             </p>
           </div>
-          <h2 class="text-2xl font-bold pt-2 service-title">ব্র্যাক</h2>
+          <h2 class="text-xl font-bold pt-2 service-title">ব্র্যাক</h2>
           <p class="font-semibold text-[#4A4A4A] pt-2 service-name">brac</p>
-          <p id="BracEmergency" class="text-2xl font-bold pt-2 service-number">
+          <p id="BracEmergency" class="text-xl font-bold pt-2 service-number">
             16445
           </p>
-          <p class="pt-2 bg-[#FFE3E2] p-2 rounded-xl inline-block">এনজিও</p>
+          <p class="pt-2 bg-[#FFE3E2] p-2 rounded-xl w-fit">এনজিও</p>
           <div class="flex items-center gap-2 mt-2 text-lg">
             <button id="copy-button-brac" class="copy-button">
               <i class="fa-regular fa-copy"></i> Copy
@@ -359,19 +358,17 @@
               <i class="fa-regular fa-heart heart-btn p-2"></i>
             </p>
           </div>
-          <h2 class="text-2xl font-bold pt-2 service-title">
-            বাংলাদেশ রেলওয়ে
-          </h2>
+          <h2 class="text-xl font-bold pt-2 service-title">বাংলাদেশ রেলওয়ে</h2>
           <p class="font-semibold text-[#4A4A4A] pt-2 service-name">
             Bangladesh-Railway
           </p>
           <p
             id="BangladeshRailwayEmergency"
-            class="text-2xl font-bold pt-2 service-number"
+            class="text-xl font-bold pt-2 service-number"
           >
             163
           </p>
-          <p class="pt-2 bg-[#FFE3E2] p-2 rounded-xl inline-block">পরিবহন</p>
+          <p class="pt-2 bg-[#FFE3E2] p-2 rounded-xl w-fit">পরিবহন</p>
           <div class="flex items-center gap-2 mt-2 text-lg">
             <button id="copy-button-bangladesh-railway" class="copy-button">
               <i class="fa-regular fa-copy"></i> Copy
