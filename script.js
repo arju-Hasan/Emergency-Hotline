@@ -219,34 +219,37 @@ copyMappings.forEach(([btnId, textId]) => setupCopyButton(btnId, textId));
 
 
 // ============================================
-// const transactiondata = [];
+const callButtons = document.querySelectorAll(".call-button");
+const coinElement = document.getElementById("coin-count");
+let coins = parseInt(coinElement.innerText);
+const callHistoryContainer = document.getElementById("call-history");
 
-// document
-//   .getElementById("call-button-national")
-//   .addEventListener("click", function () {
-//     alert("calling 999");
-//  
-// 
-//     const transactionSection = document.getElementById("newTransaction");
-//     transactionSection.innerHTML = ""; // Clear previous transactions
-// 
-//     for (data of transactiondata) {
-//       const div = document.createElement("div");
-//       div.innerHTML = `
-//       <div class="bg-white p-3 rounded-2xl m-3 flex justify-between items-center">
-//         <div class="flex items-center">
-//           <div class="p-3 rounded-full bg-[#f4f5f7]">
-//             <img src="./assets/wallet1.png" class="mx-auto" alt="">
-//           </div>
-//           <div class="ml-3">
-//             <h1>${data.name}</h1>
-//             <p>${data.Date}</p>
-//           </div>
-//         </div>
-//         <div>
-//          <i class="fa-solid fa-ellipsis-vertical"></i>
-//       </div>`;
-//       alert("calling 999");
-//       transactionSection.appendChild(div);
-//        };
-//     });
+for (const btn of callButtons) {
+  btn.addEventListener("click", function () {
+    if (coins < 20) {
+      return;
+    }
+    const card = btn.closest(".card");
+    const serviceName = card.querySelector(".service-name").innerText;
+    const serviceNumber = card.querySelector(".helpline-number").innerText;
+    const serviceTitle = card.querySelector(".service-title").innerText;
+
+    alert(`Calling ${serviceName} at ${serviceNumber}`);
+
+    const historyItem = document.createElement("div");
+
+    historyItem.innerHTML = `
+    
+        <div class="flex justify-between items-center p-4 my-4 bg-[#FAFAFA] rounded-lg">
+            <div>
+                <h3 class="font-[Inter] font-semibold text-[#111111]">${serviceTitle}</h3>
+                <p class="text-[#5C5C5C] text-[18px]">${serviceNumber}</p>
+            </div>
+            <p class="text-[18px] text-[#111111]">${new Date().toLocaleTimeString()}</p>
+        </div>
+
+    `;
+
+    callHistoryContainer.appendChild(historyItem);
+  });
+}
