@@ -44,7 +44,7 @@ Event delegation is implemented inside an event listener on a parent element so 
 **stopPropagation():** Prevents the event from bubbling up to parent elements.
 
 
-### I have used it. (###) (**_**)
+### I have used it. Styling text (###) (**) and symbol
 
 
 ### ❤️️❤️️❤️️  Thank You Sir ❤️️❤️️❤️️
