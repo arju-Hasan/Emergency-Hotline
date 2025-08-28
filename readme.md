@@ -19,17 +19,33 @@
 2. How do you **create and insert a new element into the DOM**?
 
 ### Answer 👇
-this is answer
+To add a new element to the DOM, first you need to create an element, then place it inside another element.
 
 
-### 6. Answer the following questions clearly:
-
-
-
+### 🚩 Question Number 3
 3. What is **Event Bubbling** and how does it work?
+
+### Answer 👇
+Event bubbling is a process in browser event handling where when an event occurs on a child element, it gradually propagates “upward” to the parent elements. That is, Child → Parent → Parent → Parent → Parent.
+
+
+### 🚩 Question Number 4
 4. What is **Event Delegation** in JavaScript? Why is it useful?
+
+### Answer 👇
+Event delegation is implemented inside an event listener on a parent element so that the events of its child elements can also be handled.
+
+
+### 🚩 Question Number 5
 5. What is the difference between **preventDefault() and stopPropagation()** methods?
 
-- 📂 **GitHub Repository**
-- 🌐 **Live Link**
+### Answer 👇
+**preventDefault():** Stops the default browser behavior of an event.
+**stopPropagation():** Prevents the event from bubbling up to parent elements.
+
+
+### I have used it. (###) (**content**)
+
+
+### ❤️️❤️️❤️️  Thank You Sir ❤️️❤️️❤️️
 
