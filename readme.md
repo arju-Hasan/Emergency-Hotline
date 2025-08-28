@@ -5,10 +5,10 @@
 
 ### Answer 👇
 
-**getElementById:** Finds an element with a specific ID. It always returns only one element (because an ID should be unique).
-**getElementsByClassName:** Finds all elements with the same class name.
-**querySelector:** Works like a CSS selector (e.g., class, id, or tag). It only returns the first matched element.
-**querySelectorAll:** Similar to querySelector, but returns all the matched elements.
+<u>**getElementById:**</u> Finds an element with a specific ID. It always returns only one element (because an ID should be unique).
+<u>**getElementsByClassName:**</u> Finds all elements with the same class name.
+<u>**querySelector:**</u> Works like a CSS selector (e.g., class, id, or tag). It only returns the first matched element.
+<u>**querySelectorAll:**</u> Similar to querySelector, but returns all the matched elements.
 
 
 ### 🚩 Question Number 2
