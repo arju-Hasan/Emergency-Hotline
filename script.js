@@ -255,3 +255,8 @@ const clearHistory = document.getElementById("clear-history-btn");
 clearHistory.addEventListener("click", function () {
   callHistoryContainer.innerHTML = "";
 });
+
+
+// ===========footer section========
+const yearElement = document.getElementById("year");
+yearElement.innerText = `Copyright © ${new Date().getFullYear()} - All right reserved by Arju Hasan`;
