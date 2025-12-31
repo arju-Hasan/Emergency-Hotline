@@ -30,7 +30,7 @@ The goal of this project is to demonstrate basic front-end development skills wh
 Open the live link above or clone the repository and open `index.html` in your browser.
 
 
-## ======================================================
+## =================================================
 
 
 ## 🖐 Hi, Top 5 qution Answer Readme.md File.
